@@ -3,13 +3,13 @@
 
 If you received a message from someone that was encrypted with this script, you can decrypt it with your ssh private key using the following command without installing anything:
 ```
-bash <(curl -s https://sshenc.sh/sshenc.sh) -s ~/.ssh/id_rsa < file-containing-the-encrypted-text.txt
+bash <(curl -s https://github.com/tjsoftworks/sshenc.sh/blob/master/sshenc.sh) -s ~/.ssh/id_rsa < file-containing-the-encrypted-text.txt
 ```
 sshenc.sh uses openssl under the hood, so you need to have that installed in your path to make it work.
 
 ## Install
 ```
-curl -O https://sshenc.sh/sshenc.sh
+curl -O https://github.com/tjsoftworks/sshenc.sh/blob/master/sshenc.sh
 chmod +x sshenc.sh
 ```
 
